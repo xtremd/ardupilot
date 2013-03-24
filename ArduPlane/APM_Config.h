@@ -13,6 +13,9 @@
 
 //#define HIL_MODE            HIL_MODE_DISABLED
 
+// For flightGear, use this:
+//define HIL_MODE            HIL_MODE_ATTITUDE
+
 /*
  *  // HIL_MODE SELECTION
  *  //

@@ -43,7 +43,14 @@ handle_process_nav_cmd()
     case MAV_CMD_NAV_RETURN_TO_LAUNCH:
         do_RTL();
         break;
-
+		
+	case MAV_CMD_ASCEND_ON_BALLOON:
+		//Do some stuff (mainly wait)
+		//do_ascension();
+		break;
+	case MAV_CMD_GLIDE_DESCEND:
+		//Descend from balloon on unpowered descent
+		break;
     default:
         break;
     }

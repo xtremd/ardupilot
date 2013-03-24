@@ -24,7 +24,7 @@ Commands below MAV_CMD_NAV_LAST are commands that have a end criteria, eg "reach
 Command ID	Name								Parameter 1			Altitude			Latitude			Longitude
 0x10 / 16	MAV_CMD_NAV_WAYPOINT				-					altitude			lat					lon
 
-0x11 / 17	MAV_CMD_NAV_LOITER_UNLIM 		(indefinitely)			altitude			lat					lon
+0x11 / 17	MAV_CMD_NAV_LOITER_UNLIM 			(indefinitely)		altitude			lat					lon
 
 0x12 / 18	MAV_CMD_NAV_LOITER_TURNS			turns				altitude			lat					lon
 
@@ -38,6 +38,10 @@ Command ID	Name								Parameter 1			Altitude			Latitude			Longitude
 			NOTE:  for command 0x16 the value takeoff pitch specifies the minimum pitch for the case with airspeed sensor and the target pitch for the case without.
 
 0x17 / 23	MAV_CMD_NAV_TARGET					-					altitude			lat					lon
+
+0x18 / 24	MAV_CMD_START_BALLOON_ASCENT		Failsafe height (m) #THis and following command need to be set in ardupilotmega.h enum#
+
+0x19 / 25	MAV_CMD_START_GLIDE_DESCENT			
 
 
 ***********************************
